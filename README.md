@@ -500,6 +500,7 @@ This project provides practical experience with:
 
 After completing this project, the following concepts are practiced:
 
+```
 ✅ Loading datasets using Pandas
 ✅ Understanding DataFrame structure
 ✅ Inspecting rows and columns
@@ -515,6 +516,7 @@ After completing this project, the following concepts are practiced:
 ✅ Cleaning categorical values
 ✅ Exporting cleaned data
 ✅ Validating the final dataset
+```
 
 ## 📁 Project Structure
 ---
