@@ -4,9 +4,12 @@ E-commerce Cleaning Data
 
 ## 🛍️ E-Commerce Data Cleaning Using Python & Pandas
 
-🧹 End-to-End Data Cleaning Project 🐍 Technology: Python 🐼 Library: Pandas 📊 Dataset: Fashion E-Commerce Dataset 🎯 Objective: Clean, standardize, validate, and export an e-commerce dataset for further analysis.
+## 🧹 End-to-End Data Cleaning Project 🐍
+---
 
-📌 Project Overview
+ Technology: Python 🐼 Library: Pandas 📊 Dataset: Fashion E-Commerce Dataset 🎯 Objective: Clean, standardize, validate, and export an e-commerce dataset for further analysis.
+
+## 📌 Project Overview
 ---
 This project demonstrates a complete Data Cleaning workflow using Python and Pandas.
 
@@ -14,7 +17,7 @@ The project uses a fashion e-commerce dataset containing product-related informa
 
 The main goal is to transform the raw dataset into a clean, consistent, and analysis-ready dataset.
 
-The project covers:
+### The project covers:
 ---
 ```
 📂 Loading raw data
@@ -31,11 +34,12 @@ The project covers:
 💾 Exporting the cleaned dataset
 ✅ Validating the final output
 ```
-🎯 Project Objective
+### 🎯 Project Objective
 ---
 The primary objective of this project is to improve the quality and consistency of the raw e-commerce dataset.
 
 Before Cleaning
+---
 
 ```
 ❌ Unwanted columns
@@ -48,7 +52,7 @@ Before Cleaning
 ```
 
 After Cleaning
-
+---
 ```
 ✅ Relevant columns
 ✅ Correct column names
@@ -60,7 +64,7 @@ After Cleaning
 ✅ Analysis-ready dataset
 ```
 
-🔄 Data Cleaning Workflow
+## 🔄 Data Cleaning Workflow
 ---
 ```
 📂 Load Dataset
@@ -98,14 +102,16 @@ After Cleaning
 ✅ Validate Final Dataset
 ```
 
-1️⃣ Import Required Libraries
+## 1️⃣ Import Required Libraries
 ---
 The project starts by importing the required Python libraries.
 
 🐼 Pandas
+
 Pandas is the main library used for data manipulation and cleaning.
 
 📊 Matplotlib
+
 Matplotlib is used to visualize the number of duplicate and unique records.
 
 🛠️ Technologies
@@ -113,7 +119,7 @@ Matplotlib is used to visualize the number of duplicate and unique records.
 🐼 Pandas
 📊 Matplotlib
 
-2️⃣ Load the Dataset 📂
+## 2️⃣ Load the Dataset 📂
 ---
 The raw fashion e-commerce dataset is loaded from a CSV file using Pandas.
 
@@ -132,7 +138,7 @@ Data Flow
         df
 ```
 
-3️⃣ Explore the Dataset 🔍
+## 3️⃣ Explore the Dataset 🔍
 ---
 The dataset is initially explored to understand its structure and contents.
 
@@ -150,8 +156,9 @@ Purpose
 Check the ending records
 Confirm that the dataset loaded correctly
 
-4️⃣ Dataset Information 📋
+## 4️⃣ Dataset Information 📋
 ---
+
 The info() method is used to inspect:
 
 Column names
@@ -160,8 +167,9 @@ Data types
 Number of entries
 This helps identify potential data-quality issues before cleaning.
 
-5️⃣ Check Dataset Shape 📏
+## 5️⃣ Check Dataset Shape 📏
 ---
+
 The dataset shape is checked to determine:
 
 Number of Rows
@@ -169,15 +177,18 @@ Number of Rows
 Number of Columns
 This provides a basic understanding of the dataset size.
 
-6️⃣ Check Column Names 📋
+## 6️⃣ Check Column Names 📋
 ---
+
 All column names are displayed to identify:
 
 Unwanted columns
 Incorrect names
 Columns requiring modification
-7️⃣ Remove Unwanted Column 🗑️
+
+## 7️⃣ Remove Unwanted Column 🗑️
 ---
+
 The column:
 
 Unnamed: 0
@@ -194,8 +205,9 @@ Result
 🗑️ Removed
 ```
 
-8️⃣ Rename Incorrect Column ✏️
+## 8️⃣ Rename Incorrect Column ✏️
 ---
+
 The dataset contains a spelling mistake:
 
 ❌ Deatils
@@ -210,8 +222,9 @@ Data quality
 Code consistency
 Professional presentation
 
-9️⃣ Detect Duplicate Records 🔁
+## 9️⃣ Detect Duplicate Records 🔁
 ---
+
 Duplicate rows are checked using Pandas.
 
 The project identifies both:
@@ -220,8 +233,9 @@ The project identifies both:
 🔁 Duplicate Rows
 The number of duplicate and non-duplicate records is calculated.
 
-🔟 Visualize Duplicate Records 📊
+## 🔟 Visualize Duplicate Records 📊
 ---
+
 Matplotlib is used to create a bar chart showing the distribution of:
 
 Duplicate records
@@ -229,14 +243,16 @@ Unique records
 🎯 Purpose
 Visualization provides a quick understanding of how many duplicate records exist in the dataset.
 
-1️⃣1️⃣ Count Duplicate Records 🔢
+## 1️⃣1️⃣ Count Duplicate Records 🔢
 ---
+
 The total number of duplicate records is calculated.
 
 This helps determine how much duplicate data needs to be removed.
 
-1️⃣2️⃣ Remove Duplicate Records 🧹
+## 1️⃣2️⃣ Remove Duplicate Records 🧹
 ---
+
 Duplicate rows are removed from the DataFrame.
 
 After removal, the dataset is checked again to confirm that duplicate records no longer exist.
@@ -250,8 +266,9 @@ Duplicate Rows
 0 Duplicate Rows
 ```
 
-1️⃣3️⃣ Reset DataFrame Index 🔢
+## 1️⃣3️⃣ Reset DataFrame Index 🔢
 ---
+
 After removing duplicate rows, the DataFrame index may contain gaps.
 
 The index is reset so that the cleaned dataset has a continuous index.
@@ -278,8 +295,9 @@ After
 
 This makes the cleaned DataFrame more organized.
 
-1️⃣4️⃣ Identify Missing Values ❓
+## 1️⃣4️⃣ Identify Missing Values ❓
 ---
+
 Missing values are checked using:
 
 isna()
@@ -288,8 +306,9 @@ The total missing values in each column are calculated.
 Purpose
 To identify incomplete information that requires cleaning.
 
-1️⃣5️⃣ Handle Missing Records 🧹
+## 1️⃣5️⃣ Handle Missing Records 🧹
 ---
+
 Rows containing missing values are removed from the dataset.
 
 This creates a dataset containing complete records for the remaining fields.
@@ -306,8 +325,9 @@ Cleaning Process
 
 ⚠️ In a production project, missing values should be analyzed before deciding whether to delete rows or use imputation. This project uses row removal as part of the data-cleaning workflow.
 
-1️⃣6️⃣ Standardize Brand Names 🔤
+## 1️⃣6️⃣ Standardize Brand Names 🔤
 ---
+
 Brand names are standardized using capitalization.
 
 For example:
@@ -320,13 +340,14 @@ Adidas
 
 are standardized into a consistent text format.
 
-🎯 Purpose
+## 🎯 Purpose
 ---
 
 Consistent text formatting makes categorical data easier to analyze.
 
-1️⃣7️⃣ Standardize Product Details 📝
+## 1️⃣7️⃣ Standardize Product Details 📝
 ---
+
 The Details column is also standardized using capitalization.
 
 This improves consistency in product descriptions.
@@ -339,14 +360,16 @@ Result
 🔤 Standardized formatting
 ```
 
-1️⃣8️⃣ Inspect Size Information 📏
+## 1️⃣8️⃣ Inspect Size Information 📏
 ---
+
 The Sizes column is examined to identify unusual or invalid values.
 
 The project specifically checks the data type and values of individual records to understand how missing-size information is represented.
 
-1️⃣9️⃣ Handle Invalid Size Values 🧹
+## 1️⃣9️⃣ Handle Invalid Size Values 🧹
 ---
+
 Some size records contain the text:
 
 Nan
@@ -370,8 +393,9 @@ Cleaning Process
 
 This ensures that the final dataset contains meaningful size information.
 
-2️⃣0️⃣ Clean Discount Information 💰
+## 2️⃣0️⃣ Clean Discount Information 💰
 ---
+
 Some discount values contain:
 
 Nan
@@ -387,8 +411,9 @@ Nan
 No Discount
 ```
 
-2️⃣1️⃣ Save Cleaned Dataset 💾
+## 2️⃣1️⃣ Save Cleaned Dataset 💾
 ---
+
 After completing the cleaning process, the cleaned dataset is exported into two formats.
 
 📄 CSV
@@ -403,8 +428,9 @@ Dashboard Development
 Machine Learning
 Reporting
 
-2️⃣2️⃣ Verify the Output ✅
+## 2️⃣2️⃣ Verify the Output ✅
 ---
+
 The saved CSV and Excel files are loaded again using Pandas.
 
 This confirms that:
@@ -417,8 +443,10 @@ This confirms that:
 ✅ Cleaning output verified
 ```
 
-🧹 Data Cleaning Summary
+## 🧹 Data Cleaning Summary
+
 Cleaning Task	Action
+```
 📂 Dataset Loading	CSV loaded using Pandas
 🗑️ Unwanted Column	Unnamed: 0 removed
 ✏️ Column Name	Deatils → Details
@@ -440,9 +468,10 @@ Technology	Purpose
 📊 Matplotlib	Duplicate Data Visualization
 📄 CSV	Raw & Cleaned Data Storage
 📊 Excel	Cleaned Data Export
-
-📚 Key Pandas Concepts Learned
+```
+## 📚 Key Pandas Concepts Learned
 ---
+
 This project provides practical experience with:
 
 ```
@@ -466,7 +495,7 @@ This project provides practical experience with:
 
 ```
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 ---
 
 After completing this project, the following concepts are practiced:
@@ -487,8 +516,9 @@ After completing this project, the following concepts are practiced:
 ✅ Exporting cleaned data
 ✅ Validating the final dataset
 
-📁 Project Structure
+## 📁 Project Structure
 ---
+
 ```
 🛍️ E-Commerce Cleaning Data
 │
@@ -512,8 +542,9 @@ After completing this project, the following concepts are practiced:
 └── 📖 README.md
 ```
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 ---
+
 The project can be further improved by adding:
 
 🔹 Missing-value percentage analysis
@@ -527,8 +558,9 @@ The project can be further improved by adding:
 🔹 E-commerce sales analysis dashboard
 🔹 Automated data-cleaning pipeline
 
-🏆 Conclusion
+## 🏆 Conclusion
 ---
+
 This project demonstrates how Python and Pandas can be used to transform a raw e-commerce dataset into a cleaner and more consistent dataset.
 
 The workflow covers the complete data-cleaning process, including dataset exploration, unwanted-column removal, column correction, duplicate handling, missing-value handling, text standardization, size cleaning, discount cleaning, and final dataset export.
