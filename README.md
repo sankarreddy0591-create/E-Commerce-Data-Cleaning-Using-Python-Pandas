@@ -2,6 +2,7 @@
 E-commerce Cleaning Data
 
 ## 🛍️ E-Commerce Data Cleaning Using Python & Pandas
+
 🧹 End-to-End Data Cleaning Project 🐍 Technology: Python 🐼 Library: Pandas 📊 Dataset: Fashion E-Commerce Dataset 🎯 Objective: Clean, standardize, validate, and export an e-commerce dataset for further analysis.
 
 📌 Project Overview
@@ -12,7 +13,7 @@ The project uses a fashion e-commerce dataset containing product-related informa
 The main goal is to transform the raw dataset into a clean, consistent, and analysis-ready dataset.
 
 The project covers:
-
+'''
 📂 Loading raw data
 🔍 Exploring the dataset
 🗑️ Removing unnecessary columns
@@ -26,10 +27,12 @@ The project covers:
 💰 Cleaning discount information
 💾 Exporting the cleaned dataset
 ✅ Validating the final output
+'''
 🎯 Project Objective
 The primary objective of this project is to improve the quality and consistency of the raw e-commerce dataset.
 
 Before Cleaning
+'''
 ❌ Unwanted columns
 ❌ Incorrect column name
 ❌ Duplicate records
@@ -37,7 +40,10 @@ Before Cleaning
 ❌ Inconsistent text formatting
 ❌ Invalid size values
 ❌ Unclear discount values
+'''
+
 After Cleaning
+'''
 ✅ Relevant columns
 ✅ Correct column names
 ✅ Duplicate-free records
@@ -46,7 +52,11 @@ After Cleaning
 ✅ Clean size values
 ✅ Clear discount information
 ✅ Analysis-ready dataset
+'''
+
 🔄 Data Cleaning Workflow
+
+'''
 📂 Load Dataset
       ↓
 🔍 Explore Dataset
@@ -80,6 +90,8 @@ After Cleaning
 💾 Save Clean Dataset
       ↓
 ✅ Validate Final Dataset
+'''
+
 1️⃣ Import Required Libraries
 The project starts by importing the required Python libraries.
 
@@ -100,6 +112,8 @@ The dataset is stored in a DataFrame named:
 
 df
 Data Flow
+
+'''
 📄 FashionDataset.csv
         ↓
    pd.read_csv()
@@ -107,6 +121,8 @@ Data Flow
 🐼 Pandas DataFrame
         ↓
         df
+'''
+
 3️⃣ Explore the Dataset 🔍
 The dataset is initially explored to understand its structure and contents.
 
@@ -156,9 +172,13 @@ Why?
 This column is an unnecessary index-like column and does not provide useful product information for analysis.
 
 Result
+
+'''
 ❌ Unnamed: 0
        ↓
 🗑️ Removed
+'''
+
 8️⃣ Rename Incorrect Column ✏️
 The dataset contains a spelling mistake:
 
@@ -200,31 +220,40 @@ Duplicate rows are removed from the DataFrame.
 
 After removal, the dataset is checked again to confirm that duplicate records no longer exist.
 
+'''
 Expected Result
 Duplicate Rows
       ↓
    Removed
       ↓
 0 Duplicate Rows
+'''
+
 1️⃣3️⃣ Reset DataFrame Index 🔢
 After removing duplicate rows, the DataFrame index may contain gaps.
 
 The index is reset so that the cleaned dataset has a continuous index.
 
 Before
+'''
 0
 1
 2
 5
 7
 8
+'''
+
 After
+'''
 0
 1
 2
 3
 4
 5
+'''
+
 This makes the cleaned DataFrame more organized.
 
 1️⃣4️⃣ Identify Missing Values ❓
@@ -241,22 +270,27 @@ Rows containing missing values are removed from the dataset.
 
 This creates a dataset containing complete records for the remaining fields.
 
+'''
 Cleaning Process
 ❓ Missing Records
        ↓
 🗑️ Remove
        ↓
 ✅ Complete Records
+'''
+
 ⚠️ In a production project, missing values should be analyzed before deciding whether to delete rows or use imputation. This project uses row removal as part of the data-cleaning workflow.
 
 1️⃣6️⃣ Standardize Brand Names 🔤
 Brand names are standardized using capitalization.
 
 For example:
-
+'''
 adidas
 ADIDAS
 Adidas
+'''
+
 are standardized into a consistent text format.
 
 🎯 Purpose
@@ -268,9 +302,12 @@ The Details column is also standardized using capitalization.
 This improves consistency in product descriptions.
 
 Result
+'''
 ❌ Inconsistent formatting
         ↓
 🔤 Standardized formatting
+'''
+
 1️⃣8️⃣ Inspect Size Information 📏
 The Sizes column is examined to identify unusual or invalid values.
 
@@ -286,6 +323,8 @@ NA VALUED
 The records containing NA VALUED are then removed.
 
 Cleaning Process
+'''
+
 "Nan"
   ↓
 "NA VALUED"
@@ -293,6 +332,9 @@ Cleaning Process
 🗑️ Remove
   ↓
 ✅ Valid Size Records
+
+'''
+
 This ensures that the final dataset contains meaningful size information.
 
 2️⃣0️⃣ Clean Discount Information 💰
@@ -305,9 +347,12 @@ No Discount
 Why?
 This provides a clearer business meaning for products where a discount value is not available.
 
+'''
 Nan
  ↓
 No Discount
+'''
+
 2️⃣1️⃣ Save Cleaned Dataset 💾
 After completing the cleaning process, the cleaned dataset is exported into two formats.
 
@@ -327,11 +372,14 @@ The saved CSV and Excel files are loaded again using Pandas.
 
 This confirms that:
 
+'''
 💾 Data was saved successfully
         ↓
 📂 File can be loaded
         ↓
 ✅ Cleaning output verified
+'''
+
 🧹 Data Cleaning Summary
 Cleaning Task	Action
 📂 Dataset Loading	CSV loaded using Pandas
@@ -358,6 +406,7 @@ Technology	Purpose
 📚 Key Pandas Concepts Learned
 This project provides practical experience with:
 
+'''
 🐼 pd.read_csv()
 🔍 head()
 🔍 tail()
@@ -375,7 +424,11 @@ This project provides practical experience with:
 🔄 replace()
 💾 to_csv()
 📊 to_excel()
+
+'''
 🎯 Learning Outcomes
+
+
 After completing this project, the following concepts are practiced:
 
 ✅ Loading datasets using Pandas
@@ -393,7 +446,9 @@ After completing this project, the following concepts are practiced:
 ✅ Cleaning categorical values
 ✅ Exporting cleaned data
 ✅ Validating the final dataset
+
 📁 Project Structure
+'''
 🛍️ E-Commerce Cleaning Data
 │
 ├── 📁 Data
@@ -414,6 +469,7 @@ After completing this project, the following concepts are practiced:
 ├── Cleaned_data.py
 │
 └── 📖 README.md
+'''
 
 🚀 Future Improvements
 The project can be further improved by adding:
